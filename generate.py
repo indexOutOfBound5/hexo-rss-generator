@@ -17,6 +17,9 @@ parser.add_argument('description',
 parser.add_argument('root_link',
                     type=str,
                     help='Root link of the website')
+parser.add_argument('output',
+                    type=str,
+                    help='Output dir for the rss file')
 
 args = parser.parse_args()
 
@@ -52,6 +55,6 @@ print(xml_items)
 todays_date = datetime.datetime.today().strftime("%a, %d %b %Y")
 fileout = xml_file.format(title=args.title, description=args.description, root_link=args.root_link, todays_date=todays_date, items="".join(xml_items))
 
-f = open(f"rss.xml","w") 
+f = open(args.output + "/rss.xml","w")
 f.write(fileout)
 f.close()
