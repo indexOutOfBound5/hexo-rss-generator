@@ -1,0 +1,6 @@
+---
+title: Sausage
+date: 2021-11-06 05:06:26
+description: Mr. Cyril
+tags: [rss, webdev, frustration, python, fstrings]
+---

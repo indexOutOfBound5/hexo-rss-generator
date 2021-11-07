@@ -1,0 +1,6 @@
+---
+title: Bacon
+date: 2021-11-05 05:04:26
+description: How to eat bacon
+tags: [rss, webdev, frustration, python, fstrings]
+---
